@@ -23,8 +23,7 @@ type Options = {
 const emitUpdate = (options: Options) => {
   productsEmitter.emit("update", {
     id: Math.floor(Math.random() * options.products.length),
-    field:
-      options.fields[Math.floor(Math.random() * options.fields.length) + 1],
+    field: options.fields[Math.floor(Math.random() * options.fields.length)],
     value: round(Math.random() * 10 - 5),
   });
 };
